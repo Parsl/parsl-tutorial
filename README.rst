@@ -10,14 +10,15 @@ To install Parsl::
 
   $ pip3 install parsl
 
+
 To install Parsl from source:
 
-  1. Download Parsl::
+1. Download Parsl::
 
     $ git clone https://github.com/Parsl/parsl.git
     
 
-  2. Install::
+2. Install Parsl::
 
     $ cd parsl
     
