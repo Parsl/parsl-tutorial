@@ -18,8 +18,7 @@ config = {
                 "taskBlocks": "$CORES",
                 "scriptDir": ".",
                 "options": {
-                    "overrides": "source activate /projects/CSC249ADCD01/conda_envs/parsl_env_1",
-                    "account": "CSC249ADCD01"
+                    "overrides": "soft add anaconda; source activate /home/yadunand/.conda/envs/parsl_env_3.5"
                 },
             },
         },
