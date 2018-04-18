@@ -4,28 +4,16 @@ Parsl runs programs concurrently as soon as their inputs are available, reducing
 
 In this tutorial, you will be able to first try a few Parsl examples (examples 1-4) on your local machine, to get a sense of the language. Then, in examples 5-7 you will run similar workflows on any resource you may have access to, such as clouds (Amazon Web Services), Cray HPC systems, clusters etc, and see how more complex workflows can be expressed with Parsl scripts.
 
-To run the tutorial, ensure that Python (3.5+) and Parsl 0.3 is installed.
+To run the tutorial, ensure that Python (3.5+) and Parsl is installed.
 
 To install Parsl:: 
 
   $ pip3 install parsl
 
 
-To install Parsl from source:
+To install Parsl from source, see the `documentation <http://parsl.readthedocs.io/en/latest/quickstart.html>`_.
 
-1. Download Parsl::
-
-    $ git clone https://github.com/Parsl/parsl.git
-    
-
-2. Install Parsl::
-
-    $ cd parsl
-    
-    $ python3 setup.py install
-
-
-Setup the Parsl tutorial::
+Finally, set up the Parsl tutorial::
 
     $ git clone https://github.com/parsl/parsl-tutorial.git
  
