@@ -1,6 +1,7 @@
 Parsl Tutorials
 ===============
-.. image:: https://mybinder.org/badge.svg :target: https://mybinder.org/v2/gh/Parsl/parsl-tutorial/master
+.. image:: https://mybinder.org/badge.svg
+ :target: https://mybinder.org/v2/gh/Parsl/parsl-tutorial/master
 
 Parsl is a parallel scripting library for Python that allows users to develop and execute dataflow scripts on parallel and distributed resources.
 
