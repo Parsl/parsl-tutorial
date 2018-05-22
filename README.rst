@@ -1,7 +1,6 @@
-.. image:: https://mybinder.org/badge.svg :target: https://mybinder.org/v2/gh/Parsl/parsl-tutorial/master
-
 Parsl Tutorials
 ===============
+.. image:: https://mybinder.org/badge.svg :target: https://mybinder.org/v2/gh/Parsl/parsl-tutorial/master
 
 Parsl is a parallel scripting library for Python that allows users to develop and execute dataflow scripts on parallel and distributed resources.
 
@@ -18,9 +17,9 @@ The tutorial repository includes everything needed to run these nodebooks. It in
 Running with Binder
 -------------------
 
-The easiest way to run this tutorial is via Binder. Using Binder you can run the tutorial notebooks in your browser without installing any code locally.
+The easiest way to run these tutorials is via Binder. Using Binder you can run the tutorial notebooks in your browser without installing any code locally.
 
-`Start Binder <https://mybinder.org/v2/gh/Parsl/parsl-tutorial/master>`_.
+`Start Binder <https://mybinder.org/v2/gh/Parsl/parsl-tutorial/master>`_
 
 
 Running locally
