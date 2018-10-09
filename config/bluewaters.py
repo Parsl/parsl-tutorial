@@ -1,6 +1,6 @@
-from libsubmit.channels import LocalChannel
-from libsubmit.launchers import AprunLauncher
-from libsubmit.providers import TorqueProvider
+from parsl.channels import LocalChannel
+from parsl.launchers import AprunLauncher
+from parsl.providers import TorqueProvider
 
 from parsl.config import Config
 from parsl.executors.ipp import IPyParallelExecutor
@@ -20,13 +20,13 @@ config = Config(
                 min_blocks=1,
                 max_blocks=1,
                 launcher=AprunLauncher(overrides="-b -- bwpy-environ --"),
-                overrides='''#PBS -l nodes=1:ppn=32 
+                overrides='''#PBS -l nodes=1:ppn=32
+#PBS -q debug
 module load bwpy''',
                 walltime='00:30:00'
 
             ),
             controller=Controller(public_ip="10.0.0.146"),
-            working_dir="/tmp",
             storage_access=[GlobusScheme(
                 endpoint_uuid="d59900ef-6d04-11e5-ba46-22000b92c6ec",
                 endpoint_path="/",
@@ -36,3 +36,4 @@ module load bwpy''',
 
     ],
 )
+
