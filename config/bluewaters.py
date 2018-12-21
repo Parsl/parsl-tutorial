@@ -1,32 +1,32 @@
-from libsubmit.channels import LocalChannel
-from libsubmit.launchers import AprunLauncher
-from libsubmit.providers import TorqueProvider
+import parsl
+from parsl.channels import LocalChannel
+from parsl.launchers import AprunLauncher
+from parsl.providers import TorqueProvider
 
 from parsl.config import Config
-from parsl.executors.ipp import IPyParallelExecutor
-from parsl.executors.ipp_controller import Controller
+from parsl.executors import HighThroughputExecutor
+from parsl.addresses import address_by_hostname
 
 from parsl.data_provider.scheme import GlobusScheme
 
 config = Config(
     executors=[
-        IPyParallelExecutor(
-            label='bw_ipp',
+        HighThroughputExecutor(
+            label="bluewaters_htex",
+            worker_debug=True,
+            address="<LOGIN_NODE>",
             provider=TorqueProvider(
                 channel=LocalChannel(),
-                nodes_per_block=1,
-                tasks_per_node=1,
                 init_blocks=1,
-                min_blocks=1,
                 max_blocks=1,
+                min_blocks=1,
+                nodes_per_block=1,
                 launcher=AprunLauncher(overrides="-b -- bwpy-environ --"),
-                overrides='''#PBS -l nodes=1:ppn=32 
-module load bwpy''',
+                scheduler_options='''#PBS -l nodes=1:ppn=32
+#PBS -q debug''',
+                worker_init='''module load bwpy''',
                 walltime='00:30:00'
-
             ),
-            controller=Controller(public_ip="10.0.0.146"),
-            working_dir="/tmp",
             storage_access=[GlobusScheme(
                 endpoint_uuid="d59900ef-6d04-11e5-ba46-22000b92c6ec",
                 endpoint_path="/",
