@@ -12,7 +12,7 @@ This repository inlcudes three tutorials:
  - parsl-workflows.ipynb: example workflow patterns expressed in Parsl
  - parsl-advanced-features.ipynb: examples of various Parsl features such as multi-site, elasticity, and fault tolerance
 
-The tutorial repository includes everything needed to run these nodebooks. It includes sample applications ``simulate`` and ``stats`` (mock "science" applications) as well as a basic MPI program. It also includes configuration files for several compute resources. 
+The tutorial repository includes everything needed to run these notebooks. It includes sample applications ``simulate`` and ``stats`` (mock "science" applications) as well as a basic MPI program. It also includes configuration files for several compute resources. 
 
 
 Running with Binder
