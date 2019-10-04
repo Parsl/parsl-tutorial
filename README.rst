@@ -10,7 +10,7 @@ Parsl runs programs concurrently as soon as their inputs are available, reducing
 This repository inlcudes three tutorials: 
  - parsl-introduction.ipynb: a quickstart guide to using Parsl
  - parsl-workflows.ipynb: example workflow patterns expressed in Parsl
- - parsl-advanced-features.ipynb: examples of various Parsl features such as multi-site, elasticity, and fault tolerance
+ - parsl-advanced-features.ipynb: examples of various Parsl features, such as multi-site, elasticity, and fault tolerance
 
 The tutorial repository includes everything needed to run these notebooks. It includes sample applications ``simulate`` and ``stats`` (mock "science" applications) as well as a basic MPI program. It also includes configuration files for several compute resources. 
 
@@ -26,7 +26,7 @@ The easiest way to run these tutorials is via Binder. Using Binder you can run t
 Running locally
 ---------------
 
-To run the tutorial locally, ensure that Python (3.5+) and Parsl is installed.
+To run the tutorial locally, ensure that Python (3.5+) and Parsl are installed.
 
 To install Parsl:: 
 
