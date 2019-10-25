@@ -1,1 +1,1 @@
-parsl==0.9.0['monitoring']
+parsl==0.9.0
