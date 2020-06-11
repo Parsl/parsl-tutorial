@@ -1,1 +1,1 @@
-parsl[monitoring]==0.9.0
+parsl[monitoring]==1.0.0a
