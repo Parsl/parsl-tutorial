@@ -7,7 +7,7 @@ Parsl is a parallel scripting library for Python that allows users to develop an
 
 Parsl runs programs concurrently as soon as their inputs are available, reducing the need for complex parallel programming. Parsl expresses dataflow in a portable fashion: the same script can run on multicore computers, clusters, clouds, grids, and supercomputers.
 
-This repository inlcudes three tutorials: 
+This repository includes three tutorials: 
  - parsl-introduction.ipynb: a quickstart guide to using Parsl
  - parsl-workflows.ipynb: example workflow patterns expressed in Parsl
  - parsl-advanced-features.ipynb: examples of various Parsl features, such as multi-site, elasticity, and fault tolerance
